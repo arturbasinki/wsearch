@@ -1,1 +1,6 @@
-<p>search-bar works!</p>
+<!-- <input (input)="onInput($event)" /> -->
+<form (submit)="onFormSubmit($event)">
+  <input #inputBox (input)="term = inputBox.value" />
+</form>
+
+<!-- {{ term }} -->
