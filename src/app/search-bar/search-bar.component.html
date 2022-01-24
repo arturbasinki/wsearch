@@ -1,6 +1,13 @@
 <!-- <input (input)="onInput($event)" /> -->
-<form (submit)="onFormSubmit($event)">
-  <input #inputBox (input)="term = inputBox.value" />
-</form>
+<div class="box">
+  <form (submit)="onFormSubmit($event)">
+    <input
+      placeholder="Enter search term"
+      class="input"
+      #inputBox
+      (input)="term = inputBox.value"
+    />
+  </form>
+</div>
 
 <!-- {{ term }} -->
